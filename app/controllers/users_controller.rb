@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
     def create
       user = User.new(user_params).save
+      binding.pry
       redirect_to '/'
     end
 

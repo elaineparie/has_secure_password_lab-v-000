@@ -5,6 +5,7 @@ class UsersController < ApplicationController
       @user = User.new(user_params)
       user = User.new(user_params).save
       if user
+        session[:user_id] = @user.id
       redirect_to '/'
     else
       redirect_to '/users/new'

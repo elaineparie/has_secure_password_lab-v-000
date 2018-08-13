@@ -3,7 +3,10 @@ class UsersController < ApplicationController
 
     def create
       user = User.new(user_params).save
+      if user
       redirect_to '/'
+    else
+      redirect_to '/login'
     end
 
     private

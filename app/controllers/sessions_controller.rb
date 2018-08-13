@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
   def create
-   user = User.new(params[:user]).save
+   user = User.new(user_params]).save
  end
 end

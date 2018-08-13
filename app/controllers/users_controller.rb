@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     else
       redirect_to '/login'
     end
+  end
 
     private
 

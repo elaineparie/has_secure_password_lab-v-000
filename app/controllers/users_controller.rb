@@ -6,7 +6,7 @@ class UsersController < ApplicationController
       if user
       redirect_to '/'
     else
-      redirect_to '/login'
+      redirect_to '/users/new'
     end
   end
 

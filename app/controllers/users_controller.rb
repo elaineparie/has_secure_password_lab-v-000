@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
 
     def create
+      @user = User.new(user_params)
       user = User.new(user_params).save
       if user
       redirect_to '/'

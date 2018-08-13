@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     unless @user.authenticate(params[:password])
     session[:user_id] = @user.id
     redirect_to '/'
-
+end
   end
 
 
